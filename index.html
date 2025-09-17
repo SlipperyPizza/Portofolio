@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name | Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      padding: 2rem;
+      background: #111;
+      color: white;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      color: #aaa;
+      margin-top: .5rem;
+    }
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h2 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: .5rem;
+      margin-bottom: 1rem;
+    }
+    .card {
+      background: white;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,.1);
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+    .card a {
+      display: inline-block;
+      margin-top: .5rem;
+      text-decoration: none;
+      color: #0073e6;
+      border: 1px solid #0073e6;
+      padding: .3rem .6rem;
+      border-radius: 6px;
+      transition: all .2s;
+    }
+    .card a:hover {
+      background: #0073e6;
+      color: white;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      color: #777;
+      font-size: .9rem;
+      border-top: 1px solid #ddd;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Your Name</h1>
+    <p>Designer · Developer · Creator</p>
+  </header>
+
+  <!-- Experience -->
+  <section>
+    <h2>Experience</h2>
+    <div class="card">
+      <h3>Event Videographer</h3>
+      <p><em>XYZ Event · 2024</em></p>
+      <p>Captured and edited highlight reels for an event with 500+ attendees.</p>
+    </div>
+    <div class="card">
+      <h3>UI/UX Designer</h3>
+      <p><em>Freelance · 2023</em></p>
+      <p>Created wireframes and prototypes in Figma for startups and student projects.</p>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section>
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Figma Project</h3>
+        <p>Mobile app prototype for task management.</p>
+        <a href="https://figma.com" target="_blank">View on Figma</a>
+      </div>
+      <div class="card">
+        <h3>Video Editing Project</h3>
+        <p>Highlight video made for a university festival.</p>
+        <a href="https://youtube.com" target="_blank">Watch Video</a>
+      </div>
+      <div class="card">
+        <h3>Source Code Project</h3>
+        <p>A small webapp for students to order noodles online.</p>
+        <a href="https://github.com/" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© <span id="year"></span> Your Name · Made with ❤️</p>
+  </footer>
+
+  <script>
+    // auto year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
